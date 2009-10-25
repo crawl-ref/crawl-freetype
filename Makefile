@@ -1,34 +1,86 @@
-#
-# FreeType 2 build system -- top-level Makefile
-#
+# -*- Makefile -*- for freetype
 
+ifneq ($(findstring $(MAKEFLAGS),s),s)
+ifndef V
+        QUIET_CC       = @echo '   ' CC $@;
+        QUIET_AR       = @echo '   ' AR $@;
+        QUIET_RANLIB   = @echo '   ' RANLIB $@;
+        QUIET_INSTALL  = @echo '   ' INSTALL $<;
+        export V
+endif
+endif
 
-# Copyright 1996-2000, 2002, 2006 by
-# David Turner, Robert Wilhelm, and Werner Lemberg.
-#
-# This file is part of the FreeType project, and may only be used, modified,
-# and distributed under the terms of the FreeType project license,
-# LICENSE.TXT.  By continuing to use, modify, or distribute this file you
-# indicate that you have read the license and understand and accept it
-# fully.
+uname_S := $(shell uname -s)
 
+# Since Windows builds could be done with MinGW or Cygwin,
+# set a TARGET_OS_WINDOWS flag when either shows up.
+ifneq (,$(findstring MINGW,$(uname_S)))
+TARGET_OS_WINDOWS := YesPlease
+endif
+ifneq (,$(findstring CYGWIN,$(uname_S)))
+TARGET_OS_WINDOWS := YesPlease
+endif
 
-# Project names
-#
-PROJECT       := freetype
-PROJECT_TITLE := FreeType
+LIB    = libfreetype.a
+AR    ?= ar
+CC    ?= gcc
+RANLIB?= ranlib
+RM    ?= rm -f
 
-# The variable TOP_DIR holds the path to the topmost directory in the project
-# engine source hierarchy.  If it is not defined, default it to `.'.
-#
-TOP_DIR ?= .
+prefix ?= /usr/local
+libdir := $(prefix)/lib
+includedir := $(prefix)/include/freetype2
 
-# The variable OBJ_DIR gives the location where object files and the
-# FreeType library are built.
-#
-OBJ_DIR ?= $(TOP_DIR)/objs
+HEADERS := $(shell find include -type f -name '*.h')
+SOURCES = \
+    src/base/ftbase.c \
+    src/base/ftbbox.c \
+	src/base/ftbdf.c \
+	src/base/ftbitmap.c \
+    src/base/ftdebug.c \
+	src/base/ftfstype.c \
+    src/base/ftglyph.c \
+	src/base/ftgasp.c \
+    src/base/ftinit.c \
+    src/base/ftsystem.c \
+	src/autofit/autofit.c \
+	src/cache/ftcache.c \
+	src/sfnt/sfnt.c \
+	src/smooth/ftgrays.c \
+	src/smooth/ftsmooth.c \
+	src/truetype/truetype.c
 
+SOURCES := $(shell echo $(SOURCES))
+HEADERS_INST := $(patsubst include/%,$(includedir)/%,$(HEADERS))
+OBJECTS := $(patsubst %.c,%.o,$(SOURCES))
 
-include $(TOP_DIR)/builds/toplevel.mk
+CFLAGS ?= -O2
+CFLAGS += -Iinclude -DFT2_BUILD_LIBRARY
 
-# EOF
+.PHONY: install
+
+all: $(LIB)
+
+$(includedir)/%.h: include/%.h
+	@mkdir -p $(includedir)/$(shell dirname $(patsubst include/%,%,$<))
+	$(QUIET_INSTALL)cp $< $@
+	@chmod 0644 $@
+
+$(libdir)/%.a: %.a
+	@mkdir -p $(libdir)
+	$(QUIET_INSTALL)cp $< $@
+	@chmod 0644 $@
+
+install: $(HEADERS_INST) $(libdir)/$(LIB)
+
+clean:
+	$(RM) $(OBJECTS) $(LIB)
+
+distclean: clean
+
+$(LIB): $(OBJECTS)
+	$(QUIET_AR)$(AR) rcu $@ $^
+	$(QUIET_RANLIB)$(RANLIB) $@
+
+%.o: %.c
+	$(QUIET_CC)$(CC) $(CFLAGS) -o $@ -c $<

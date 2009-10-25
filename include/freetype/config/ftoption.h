@@ -184,7 +184,7 @@ FT_BEGIN_HEADER
   /*   Do not #undef this macro here since the build system might define   */
   /*   it for certain configurations only.                                 */
   /*                                                                       */
-/* #define FT_CONFIG_OPTION_SYSTEM_ZLIB */
+#define FT_CONFIG_OPTION_SYSTEM_ZLIB
 
 
   /*************************************************************************/
@@ -251,7 +251,7 @@ FT_BEGIN_HEADER
   /*   You would normally undefine this configuration macro when building  */
   /*   a version of FreeType that doesn't contain a Type 1 or CFF driver.  */
   /*                                                                       */
-#define FT_CONFIG_OPTION_POSTSCRIPT_NAMES
+/* #define FT_CONFIG_OPTION_POSTSCRIPT_NAMES */
 
 
   /*************************************************************************/
@@ -269,7 +269,7 @@ FT_BEGIN_HEADER
   /*   able to synthesize a Unicode charmap out of the glyphs found in the */
   /*   fonts.                                                              */
   /*                                                                       */
-#define FT_CONFIG_OPTION_ADOBE_GLYPH_LIST
+/* #define FT_CONFIG_OPTION_ADOBE_GLYPH_LIST */
 
 
   /*************************************************************************/
@@ -282,7 +282,7 @@ FT_BEGIN_HEADER
   /*                                                                       */
   /*   Note that the `FOND' resource isn't checked.                        */
   /*                                                                       */
-#define FT_CONFIG_OPTION_MAC_FONTS
+/* #define FT_CONFIG_OPTION_MAC_FONTS */
 
 
   /*************************************************************************/
