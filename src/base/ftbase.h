@@ -26,7 +26,7 @@
 
 FT_BEGIN_HEADER
 
-
+#ifdef FT_CONFIG_OPTION_MAC_FONTS
   /* Assume the stream is sfnt-wrapped PS Type1 or sfnt-wrapped CID-keyed */
   /* font, and try to load a face specified by the face_index.            */
   FT_LOCAL_DEF( FT_Error )
@@ -48,6 +48,7 @@ FT_BEGIN_HEADER
                          const char*  driver_name,
                          FT_Face     *aface );
 
+#endif
 
 FT_END_HEADER
 
