@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B1A0118116D3D9300B23A87 /* ftgzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B1A0117116D3D9300B23A87 /* ftgzip.c */; };
 		B0A6718E0C264E2B00983EE6 /* autofit.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670010C264E2B00983EE6 /* autofit.c */; };
 		B0A671900C264E2B00983EE6 /* ftapi.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670060C264E2B00983EE6 /* ftapi.c */; };
 		B0A671910C264E2B00983EE6 /* ftbase.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670070C264E2B00983EE6 /* ftbase.c */; };
@@ -31,14 +32,6 @@
 		B0A671C70C264E2B00983EE6 /* cff.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670450C264E2B00983EE6 /* cff.c */; };
 		B0A671E50C264E2B00983EE6 /* type1cid.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670680C264E2B00983EE6 /* type1cid.c */; };
 		B0A671E60C264E2B00983EE6 /* gxvalid.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A6706A0C264E2B00983EE6 /* gxvalid.c */; };
-		B0A672060C264E2B00983EE6 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A6708E0C264E2B00983EE6 /* adler32.c */; };
-		B0A672070C264E2B00983EE6 /* ftgzip.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A6708F0C264E2B00983EE6 /* ftgzip.c */; };
-		B0A672080C264E2B00983EE6 /* infblock.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670900C264E2B00983EE6 /* infblock.c */; };
-		B0A6720A0C264E2B00983EE6 /* infcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670920C264E2B00983EE6 /* infcodes.c */; };
-		B0A6720D0C264E2B00983EE6 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670950C264E2B00983EE6 /* inflate.c */; };
-		B0A6720E0C264E2B00983EE6 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670960C264E2B00983EE6 /* inftrees.c */; };
-		B0A672100C264E2B00983EE6 /* infutil.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670980C264E2B00983EE6 /* infutil.c */; };
-		B0A672150C264E2B00983EE6 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A6709E0C264E2B00983EE6 /* zutil.c */; };
 		B0A672180C264E2B00983EE6 /* ftlzw.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670A20C264E2B00983EE6 /* ftlzw.c */; };
 		B0A6721D0C264E2B00983EE6 /* otvalid.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670AA0C264E2B00983EE6 /* otvalid.c */; };
 		B0A6722B0C264E2B00983EE6 /* pcf.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670BB0C264E2B00983EE6 /* pcf.c */; };
@@ -58,7 +51,6 @@
 		B0A672AD0C264E2B00983EE6 /* type1.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A671650C264E2B00983EE6 /* type1.c */; };
 		B0A672B70C264E2B00983EE6 /* type42.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A671720C264E2B00983EE6 /* type42.c */; };
 		B0A672BA0C264E2B00983EE6 /* winfnt.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A671780C264E2B00983EE6 /* winfnt.c */; };
-		B0B5E114106701CF0020B21F /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A6708E0C264E2B00983EE6 /* adler32.c */; };
 		B0B5E115106701CF0020B21F /* autofit.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670010C264E2B00983EE6 /* autofit.c */; };
 		B0B5E116106701CF0020B21F /* bdf.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670260C264E2B00983EE6 /* bdf.c */; };
 		B0B5E117106701CF0020B21F /* bdflib.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A6702B0C264E2B00983EE6 /* bdflib.c */; };
@@ -72,7 +64,6 @@
 		B0B5E11F106701CF0020B21F /* ftdebug.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A6700D0C264E2B00983EE6 /* ftdebug.c */; };
 		B0B5E120106701CF0020B21F /* ftglyph.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A6700F0C264E2B00983EE6 /* ftglyph.c */; };
 		B0B5E121106701CF0020B21F /* ftgxval.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670100C264E2B00983EE6 /* ftgxval.c */; };
-		B0B5E122106701CF0020B21F /* ftgzip.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A6708F0C264E2B00983EE6 /* ftgzip.c */; };
 		B0B5E123106701CF0020B21F /* ftinit.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670110C264E2B00983EE6 /* ftinit.c */; };
 		B0B5E124106701CF0020B21F /* ftlzw.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670A20C264E2B00983EE6 /* ftlzw.c */; };
 		B0B5E125106701CF0020B21F /* ftmm.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670130C264E2B00983EE6 /* ftmm.c */; };
@@ -84,11 +75,6 @@
 		B0B5E12B106701CF0020B21F /* ftwinfnt.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670210C264E2B00983EE6 /* ftwinfnt.c */; };
 		B0B5E12C106701CF0020B21F /* ftxf86.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670220C264E2B00983EE6 /* ftxf86.c */; };
 		B0B5E12D106701CF0020B21F /* gxvalid.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A6706A0C264E2B00983EE6 /* gxvalid.c */; };
-		B0B5E12E106701CF0020B21F /* infblock.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670900C264E2B00983EE6 /* infblock.c */; };
-		B0B5E12F106701CF0020B21F /* infcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670920C264E2B00983EE6 /* infcodes.c */; };
-		B0B5E130106701CF0020B21F /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670950C264E2B00983EE6 /* inflate.c */; };
-		B0B5E131106701CF0020B21F /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670960C264E2B00983EE6 /* inftrees.c */; };
-		B0B5E132106701CF0020B21F /* infutil.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670980C264E2B00983EE6 /* infutil.c */; };
 		B0B5E133106701CF0020B21F /* otvalid.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670AA0C264E2B00983EE6 /* otvalid.c */; };
 		B0B5E134106701CF0020B21F /* pcf.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670BB0C264E2B00983EE6 /* pcf.c */; };
 		B0B5E135106701CF0020B21F /* pfr.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670C90C264E2B00983EE6 /* pfr.c */; };
@@ -107,12 +93,12 @@
 		B0B5E143106701CF0020B21F /* type1cid.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A670680C264E2B00983EE6 /* type1cid.c */; };
 		B0B5E144106701CF0020B21F /* type42.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A671720C264E2B00983EE6 /* type42.c */; };
 		B0B5E145106701CF0020B21F /* winfnt.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A671780C264E2B00983EE6 /* winfnt.c */; };
-		B0B5E146106701CF0020B21F /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = B0A6709E0C264E2B00983EE6 /* zutil.c */; };
 		B0B5E155106702C80020B21F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B5E154106702C80020B21F /* libz.dylib */; };
 		B0B5E156106702CD0020B21F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B5E154106702C80020B21F /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B1A0117116D3D9300B23A87 /* ftgzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ftgzip.c; path = gzip/ftgzip.c; sourceTree = "<group>"; };
 		B0A66FED0C264E2B00983EE6 /* afangles.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = afangles.c; path = ../../../src/autofit/afangles.c; sourceTree = SOURCE_ROOT; };
 		B0A66FEE0C264E2B00983EE6 /* afangles.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = afangles.h; path = ../../../src/autofit/afangles.h; sourceTree = SOURCE_ROOT; };
 		B0A66FEF0C264E2B00983EE6 /* afcjk.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = afcjk.c; path = ../../../src/autofit/afcjk.c; sourceTree = SOURCE_ROOT; };
@@ -267,24 +253,6 @@
 		B0A6708A0C264E2B00983EE6 /* module.mk */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = module.mk; path = ../../../src/gxvalid/module.mk; sourceTree = SOURCE_ROOT; };
 		B0A6708B0C264E2B00983EE6 /* README */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = README; path = ../../../src/gxvalid/README; sourceTree = SOURCE_ROOT; };
 		B0A6708C0C264E2B00983EE6 /* rules.mk */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = rules.mk; path = ../../../src/gxvalid/rules.mk; sourceTree = SOURCE_ROOT; };
-		B0A6708E0C264E2B00983EE6 /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = adler32.c; path = ../../../src/gzip/adler32.c; sourceTree = SOURCE_ROOT; };
-		B0A6708F0C264E2B00983EE6 /* ftgzip.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ftgzip.c; path = ../../../src/gzip/ftgzip.c; sourceTree = SOURCE_ROOT; };
-		B0A670900C264E2B00983EE6 /* infblock.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = infblock.c; path = ../../../src/gzip/infblock.c; sourceTree = SOURCE_ROOT; };
-		B0A670910C264E2B00983EE6 /* infblock.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = infblock.h; path = ../../../src/gzip/infblock.h; sourceTree = SOURCE_ROOT; };
-		B0A670920C264E2B00983EE6 /* infcodes.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = infcodes.c; path = ../../../src/gzip/infcodes.c; sourceTree = SOURCE_ROOT; };
-		B0A670930C264E2B00983EE6 /* infcodes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = infcodes.h; path = ../../../src/gzip/infcodes.h; sourceTree = SOURCE_ROOT; };
-		B0A670940C264E2B00983EE6 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = inffixed.h; path = ../../../src/gzip/inffixed.h; sourceTree = SOURCE_ROOT; };
-		B0A670950C264E2B00983EE6 /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = inflate.c; path = ../../../src/gzip/inflate.c; sourceTree = SOURCE_ROOT; };
-		B0A670960C264E2B00983EE6 /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = inftrees.c; path = ../../../src/gzip/inftrees.c; sourceTree = SOURCE_ROOT; };
-		B0A670970C264E2B00983EE6 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = inftrees.h; path = ../../../src/gzip/inftrees.h; sourceTree = SOURCE_ROOT; };
-		B0A670980C264E2B00983EE6 /* infutil.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = infutil.c; path = ../../../src/gzip/infutil.c; sourceTree = SOURCE_ROOT; };
-		B0A670990C264E2B00983EE6 /* infutil.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = infutil.h; path = ../../../src/gzip/infutil.h; sourceTree = SOURCE_ROOT; };
-		B0A6709A0C264E2B00983EE6 /* Jamfile */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.jam; name = Jamfile; path = ../../../src/gzip/Jamfile; sourceTree = SOURCE_ROOT; };
-		B0A6709B0C264E2B00983EE6 /* rules.mk */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = rules.mk; path = ../../../src/gzip/rules.mk; sourceTree = SOURCE_ROOT; };
-		B0A6709C0C264E2B00983EE6 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = zconf.h; path = ../../../src/gzip/zconf.h; sourceTree = SOURCE_ROOT; };
-		B0A6709D0C264E2B00983EE6 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = zlib.h; path = ../../../src/gzip/zlib.h; sourceTree = SOURCE_ROOT; };
-		B0A6709E0C264E2B00983EE6 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = zutil.c; path = ../../../src/gzip/zutil.c; sourceTree = SOURCE_ROOT; };
-		B0A6709F0C264E2B00983EE6 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = zutil.h; path = ../../../src/gzip/zutil.h; sourceTree = SOURCE_ROOT; };
 		B0A670A00C264E2B00983EE6 /* Jamfile */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.jam; name = Jamfile; path = ../../../src/Jamfile; sourceTree = SOURCE_ROOT; };
 		B0A670A20C264E2B00983EE6 /* ftlzw.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ftlzw.c; path = ../../../src/lzw/ftlzw.c; sourceTree = SOURCE_ROOT; };
 		B0A670A30C264E2B00983EE6 /* ftzopen.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ftzopen.c; path = ../../../src/lzw/ftzopen.c; sourceTree = SOURCE_ROOT; };
@@ -544,6 +512,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7B1A0116116D3D8800B23A87 /* gzip */ = {
+			isa = PBXGroup;
+			children = (
+				7B1A0117116D3D9300B23A87 /* ftgzip.c */,
+			);
+			name = gzip;
+			sourceTree = "<group>";
+		};
 		B0A66FEB0C264E2B00983EE6 /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -554,7 +530,7 @@
 				B0A670440C264E2B00983EE6 /* cff */,
 				B0A670580C264E2B00983EE6 /* cid */,
 				B0A670690C264E2B00983EE6 /* gxvalid */,
-				B0A6708D0C264E2B00983EE6 /* gzip */,
+				7B1A0116116D3D8800B23A87 /* gzip */,
 				B0A670A00C264E2B00983EE6 /* Jamfile */,
 				B0A670A10C264E2B00983EE6 /* lzw */,
 				B0A670A70C264E2B00983EE6 /* otvalid */,
@@ -784,32 +760,6 @@
 			);
 			name = gxvalid;
 			path = ../../../src/gxvalid;
-			sourceTree = SOURCE_ROOT;
-		};
-		B0A6708D0C264E2B00983EE6 /* gzip */ = {
-			isa = PBXGroup;
-			children = (
-				B0A6708E0C264E2B00983EE6 /* adler32.c */,
-				B0A6708F0C264E2B00983EE6 /* ftgzip.c */,
-				B0A670900C264E2B00983EE6 /* infblock.c */,
-				B0A670910C264E2B00983EE6 /* infblock.h */,
-				B0A670920C264E2B00983EE6 /* infcodes.c */,
-				B0A670930C264E2B00983EE6 /* infcodes.h */,
-				B0A670940C264E2B00983EE6 /* inffixed.h */,
-				B0A670950C264E2B00983EE6 /* inflate.c */,
-				B0A670960C264E2B00983EE6 /* inftrees.c */,
-				B0A670970C264E2B00983EE6 /* inftrees.h */,
-				B0A670980C264E2B00983EE6 /* infutil.c */,
-				B0A670990C264E2B00983EE6 /* infutil.h */,
-				B0A6709A0C264E2B00983EE6 /* Jamfile */,
-				B0A6709B0C264E2B00983EE6 /* rules.mk */,
-				B0A6709C0C264E2B00983EE6 /* zconf.h */,
-				B0A6709D0C264E2B00983EE6 /* zlib.h */,
-				B0A6709E0C264E2B00983EE6 /* zutil.c */,
-				B0A6709F0C264E2B00983EE6 /* zutil.h */,
-			);
-			name = gzip;
-			path = ../../../src/gzip;
 			sourceTree = SOURCE_ROOT;
 		};
 		B0A670A10C264E2B00983EE6 /* lzw */ = {
@@ -1252,7 +1202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0B5E114106701CF0020B21F /* adler32.c in Sources */,
 				B0B5E115106701CF0020B21F /* autofit.c in Sources */,
 				B0B5E116106701CF0020B21F /* bdf.c in Sources */,
 				B0B5E117106701CF0020B21F /* bdflib.c in Sources */,
@@ -1266,7 +1215,6 @@
 				B0B5E11F106701CF0020B21F /* ftdebug.c in Sources */,
 				B0B5E120106701CF0020B21F /* ftglyph.c in Sources */,
 				B0B5E121106701CF0020B21F /* ftgxval.c in Sources */,
-				B0B5E122106701CF0020B21F /* ftgzip.c in Sources */,
 				B0B5E123106701CF0020B21F /* ftinit.c in Sources */,
 				B0B5E124106701CF0020B21F /* ftlzw.c in Sources */,
 				B0B5E125106701CF0020B21F /* ftmm.c in Sources */,
@@ -1278,11 +1226,6 @@
 				B0B5E12B106701CF0020B21F /* ftwinfnt.c in Sources */,
 				B0B5E12C106701CF0020B21F /* ftxf86.c in Sources */,
 				B0B5E12D106701CF0020B21F /* gxvalid.c in Sources */,
-				B0B5E12E106701CF0020B21F /* infblock.c in Sources */,
-				B0B5E12F106701CF0020B21F /* infcodes.c in Sources */,
-				B0B5E130106701CF0020B21F /* inflate.c in Sources */,
-				B0B5E131106701CF0020B21F /* inftrees.c in Sources */,
-				B0B5E132106701CF0020B21F /* infutil.c in Sources */,
 				B0B5E133106701CF0020B21F /* otvalid.c in Sources */,
 				B0B5E134106701CF0020B21F /* pcf.c in Sources */,
 				B0B5E135106701CF0020B21F /* pfr.c in Sources */,
@@ -1301,7 +1244,7 @@
 				B0B5E143106701CF0020B21F /* type1cid.c in Sources */,
 				B0B5E144106701CF0020B21F /* type42.c in Sources */,
 				B0B5E145106701CF0020B21F /* winfnt.c in Sources */,
-				B0B5E146106701CF0020B21F /* zutil.c in Sources */,
+				7B1A0118116D3D9300B23A87 /* ftgzip.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1333,14 +1276,6 @@
 				B0A671C70C264E2B00983EE6 /* cff.c in Sources */,
 				B0A671E50C264E2B00983EE6 /* type1cid.c in Sources */,
 				B0A671E60C264E2B00983EE6 /* gxvalid.c in Sources */,
-				B0A672060C264E2B00983EE6 /* adler32.c in Sources */,
-				B0A672070C264E2B00983EE6 /* ftgzip.c in Sources */,
-				B0A672080C264E2B00983EE6 /* infblock.c in Sources */,
-				B0A6720A0C264E2B00983EE6 /* infcodes.c in Sources */,
-				B0A6720D0C264E2B00983EE6 /* inflate.c in Sources */,
-				B0A6720E0C264E2B00983EE6 /* inftrees.c in Sources */,
-				B0A672100C264E2B00983EE6 /* infutil.c in Sources */,
-				B0A672150C264E2B00983EE6 /* zutil.c in Sources */,
 				B0A672180C264E2B00983EE6 /* ftlzw.c in Sources */,
 				B0A6721D0C264E2B00983EE6 /* otvalid.c in Sources */,
 				B0A6722B0C264E2B00983EE6 /* pcf.c in Sources */,
@@ -1394,7 +1329,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					FT_CONFIG_OPTION_SYSTEM_ZLIB,
 					"$(GCC_PREPROCESSOR_DEFINITIONS_QUOTED_1)",
 					FT2_BUILD_LIBRARY,
 					"$(GCC_PREPROCESSOR_DEFINITIONS_QUOTED_2)",
