@@ -45,6 +45,7 @@ SOURCES = \
     src/base/ftsystem.c \
 	src/autofit/autofit.c \
 	src/cache/ftcache.c \
+	src/gzip/ftgzip.c \
 	src/sfnt/sfnt.c \
 	src/smooth/ftgrays.c \
 	src/smooth/ftsmooth.c \
